@@ -1,0 +1,4 @@
+.menu{width:42px;height:42px;padding:9px;cursor:pointer}
+@media(max-width:520px){
+  .hero-copy{font-size:16px;max-width:330px;line-height:1.8}
+}
