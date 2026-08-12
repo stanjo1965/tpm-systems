@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 82" role="img" aria-labelledby="title desc">
+  <title id="title">TPM Systems</title><desc id="desc">빨간 원과 TPM 글자로 구성된 TPM Systems 로고</desc>
+  <circle cx="41" cy="41" r="37" fill="#df001b"/><path fill="#fff" d="M17 24h47v12H48v30H33V36H17z"/>
+  <path fill="#df001b" d="M54 27h17c11 0 18 5 18 15 0 11-8 16-19 16h-4v13H54zm12 10v11h4c4 0 7-2 7-6s-3-5-7-5zm25-10h14l8 23 8-23h14v44h-12V46l-7 20h-7l-7-20v25H91zm49 0h17c11 0 18 5 18 15 0 11-8 16-19 16h-4v13h-12zm12 10v11h4c4 0 7-2 7-6s-3-5-7-5z"/>
+  <text x="181" y="70" fill="#df001b" font-family="Arial,sans-serif" font-size="12" font-weight="700">SYSTEMS</text>
+</svg>
