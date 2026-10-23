@@ -173,112 +173,27 @@
             </div>
           </div>
 
-          <!-- 그림 ③ 화면 모형 — 가만히 두면 돌아간다 (shots.js) -->
-          <div class="shots">
-            <div class="shots-head">
-              <h3>화면은 이렇게 생겼습니다</h3>
-              <p>그려 넣은 보기 화면입니다. 실제 고객 데이터가 아닙니다.</p>
+          <!-- 실제 화면 영상 — 데모 계정에서 보기 데이터로 찍었다. (CEO 지시 2026-10-23) -->
+          <div class="film">
+            <div class="film-head">
+              <h3>화면은 이렇게 움직입니다</h3>
+              <p>실제 운영 시스템을 데모 계정에서 찍은 33초입니다.</p>
             </div>
-            <div class="shot-tabs" role="tablist">
-              <button type="button" role="tab" aria-selected="true">AI 배차판</button>
-              <button type="button" role="tab" aria-selected="false">창고 재고</button>
-              <button type="button" role="tab" aria-selected="false">경영 대시보드</button>
-            </div>
-            <div class="shot-stage">
-
-              <div class="shot on">
-                <div class="win">
-                  <div class="win-bar"><u></u><u></u><u></u><em>AI 배차관리</em><s>오늘 · 배차 대기 4</s></div>
-                  <div class="win-body m-disp">
-                    <div class="m-list">
-                      <div class="r"><b>오더</b><span>구간</span><span>상태</span></div>
-                      <div class="r"><b>FCL-2271</b><span>인천항 → 평택</span><span class="tag t-wait">배차 대기</span></div>
-                      <div class="r"><b>FCL-2270</b><span>부산항 → 양산</span><span class="tag t-run">운행 중</span></div>
-                      <div class="r"><b>LCL-1182</b><span>군포 → 대전</span><span class="tag t-run">운행 중</span></div>
-                      <div class="r"><b>FCL-2268</b><span>인천항 → 안성</span><span class="tag t-done">인수 확인</span></div>
-                      <div class="r"><b>LCL-1179</b><span>김포 → 청주</span><span class="tag t-done">인수 확인</span></div>
-                    </div>
-                    <div class="m-cand">
-                      <b>FCL-2271 배차 후보</b>
-                      <div class="c">
-                        <div class="t"><span>차량 A · 40ft</span><i>92</i></div>
-                        <div class="s">공차 12km · 반납 여유 3일</div>
-                        <div class="bar"><u style="width:92%"></u></div>
-                      </div>
-                      <div class="c">
-                        <div class="t"><span>차량 B · 40ft</span><i>78</i></div>
-                        <div class="s">공차 34km · 반납 여유 2일</div>
-                        <div class="bar"><u style="width:78%"></u></div>
-                      </div>
-                      <div class="c">
-                        <div class="t"><span>차량 C · 40ft</span><i>61</i></div>
-                        <div class="s">공차 51km · 반납 여유 1일</div>
-                        <div class="bar"><u style="width:61%"></u></div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="film-stage">
+              <video
+                src="assets/tms-demo.mp4"
+                poster="assets/tms-demo-poster.jpg"
+                controls autoplay muted loop playsinline preload="metadata"
+                aria-label="오더 관리부터 AI 배차판·업무 온톨로지·AI 비서·경영 분석까지 화면을 차례로 보여 주는 영상"
+              ></video>
+              <div class="film-foot">
+                <div class="chap">
+                  <i>대시보드</i><i>오더 관리</i><i>AI 배차판</i><i>업무 온톨로지</i><i>AI 비서</i><i>경영 분석</i>
                 </div>
-                <p class="shot-cap"><b>AI 가 후보를 내고 사람이 고릅니다.</b> 공차 거리와 반납 여유일을 함께 보아 순서를 매깁니다.</p>
               </div>
-
-              <div class="shot">
-                <div class="win">
-                  <div class="win-bar"><u></u><u></u><u></u><em>창고 재고 · 로케이션</em><s>A동 · 1층</s></div>
-                  <div class="win-body m-wh">
-                    <div>
-                      <div class="m-cols"><i>01</i><i>02</i><i>03</i><i>04</i><i>05</i><i>06</i><i>07</i><i>08</i></div>
-                      <div class="m-grid">
-                        <u class="l2"></u><u class="l4"></u><u class="l1"></u><u class="l3"></u><u class="l4"></u><u></u><u class="l2"></u><u class="l1"></u>
-                        <u class="l3"></u><u class="l3"></u><u class="l4"></u><u class="l1"></u><u></u><u class="l2"></u><u class="l4"></u><u class="l3"></u>
-                        <u class="l1"></u><u class="l2"></u><u class="l2"></u><u class="l4"></u><u class="l3"></u><u class="l1"></u><u></u><u class="l2"></u>
-                        <u class="l4"></u><u class="l1"></u><u class="l3"></u><u class="l2"></u><u class="l4"></u><u class="l3"></u><u class="l1"></u><u></u>
-                      </div>
-                      <div class="m-legend">적재율<u style="background:#e9eff7"></u>빈칸<u style="background:#cfe0f5"></u><u style="background:#95bdeb"></u><u style="background:#4f91e0"></u><u style="background:#075be0"></u>가득</div>
-                    </div>
-                    <div class="m-side">
-                      <div class="k"><b>보관 품목</b><strong>1,284</strong></div>
-                      <div class="k"><b>가용 재고</b><strong>1,106</strong></div>
-                      <div class="k"><b>보류 재고</b><strong>178</strong></div>
-                      <div class="k"><b>오늘 출고 예정</b><strong>212</strong></div>
-                    </div>
-                  </div>
-                </div>
-                <p class="shot-cap"><b>어디에 얼마나 있는지가 한 눈에.</b> 칸 색이 짙을수록 많이 찬 자리입니다.</p>
-              </div>
-
-              <div class="shot">
-                <div class="win">
-                  <div class="win-bar"><u></u><u></u><u></u><em>경영 대시보드</em><s>이번 달</s></div>
-                  <div class="win-body">
-                    <div class="m-kpi">
-                      <div><b>운송 건수</b><strong>3,418</strong><em>▲ 6%</em></div>
-                      <div><b>정시 인수</b><strong>97.2%</strong><em>▲ 1.4%</em></div>
-                      <div><b>공차율</b><strong>11.8%</strong><em>▼ 2.1%</em></div>
-                      <div><b>미정산</b><strong>42건</strong><em>▼ 18건</em></div>
-                    </div>
-                    <div class="m-charts">
-                      <div>
-                        <b>요일별 운송 건수</b>
-                        <div class="m-bars">
-                          <u style="height:58%"></u><u style="height:74%"></u><u style="height:66%"></u>
-                          <u style="height:88%"></u><u style="height:100%"></u><u class="q" style="height:41%"></u><u class="q" style="height:23%"></u>
-                        </div>
-                        <div class="m-days"><i>월</i><i>화</i><i>수</i><i>목</i><i>금</i><i>토</i><i>일</i></div>
-                      </div>
-                      <div>
-                        <b>주간 공차율 추이</b>
-                        <svg viewBox="0 0 220 112" aria-hidden="true">
-                          <polyline points="6,34 42,46 78,38 114,62 150,74 186,88 214,82" fill="none" stroke="#075be0" stroke-width="2.4"/>
-                          <polyline points="6,34 42,46 78,38 114,62 150,74 186,88 214,82 214,112 6,112" fill="#075be014" stroke="none"/>
-                          <circle cx="186" cy="88" r="4" fill="#075be0"/>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="shot-cap"><b>물어보지 않아도 먼저 보입니다.</b> 사람 말로 물으면 근거가 되는 표까지 함께 답합니다.</p>
-              </div>
-
+              <p class="film-note">
+                <b>보기 데이터입니다.</b> 영상에 보이는 회사 이름·거래처·차량번호·담당자는 모두 데모용으로 만든 값이며, 고객사 자료가 아닙니다.
+              </p>
             </div>
           </div>
 
@@ -866,7 +781,7 @@
     <link rel="stylesheet" href="assets/product-accordion.css" /><link
       rel="stylesheet"
       href="assets/media.css"
-    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-visual.css" /><link rel="stylesheet" href="assets/ax-two.css" />
+    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-visual.css" /><link rel="stylesheet" href="assets/ax-two.css" /><link rel="stylesheet" href="assets/film.css" />
     <!-- 맨 위로 — 내려가면 오른쪽 아래에 나타난다 (CEO 지시 2026-10-23) -->
     <a id="toTop" href="#top" aria-label="맨 위로">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
@@ -879,6 +794,5 @@
     <script src="assets/product-accordion.js"></script>
     <script src="assets/platform-map.js"></script>
     <script src="assets/to-top.js"></script>
-    <script src="assets/shots.js"></script>
   </body>
 </html>
