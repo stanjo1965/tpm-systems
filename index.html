@@ -123,6 +123,53 @@
               ><span>분석·AI 에이전트</span>
             </div>
           </div>
+          <!-- 계층 분류 — 구간과 기반이 평평하게 나열돼 무엇이 무엇 위에 서는지 보이지 않았다.
+               채널/업무/지능/기반 네 층으로 가른다. (CEO 지시 2026-10-23) -->
+          <div class="layers">
+            <div class="layers-head">
+              <h3>플랫폼은 네 계층으로 나뉩니다</h3>
+              <p>아래 층이 흔들리면 위층이 전부 흔들립니다. 그래서 순서가 있습니다.</p>
+            </div>
+            <div class="layers-stack">
+              <div>
+                <div class="lv">
+                  <b>LAYER 01</b><strong>Channel</strong><span>채널 · 쓰는 사람이 닿는 면</span>
+                </div>
+                <div class="what">
+                  <div class="chips"><i>웹 화면</i><i>모바일 앱</i><i>현장 바코드</i><i>외부 연계 창구</i></div>
+                  <p>같은 데이터를 보는 사람에 맞춰 다르게 보여 줍니다. 앱은 웹 화면을 그대로 쓰는 하이브리드라, 서버가 바뀌면 앱을 다시 깔지 않아도 화면이 함께 바뀝니다.</p>
+                </div>
+              </div>
+              <div>
+                <div class="lv">
+                  <b>LAYER 02</b><strong>Operation</strong><span>업무 · 매일의 일이 지나는 곳</span>
+                </div>
+                <div class="what">
+                  <div class="chips"><i>Order 오더</i><i>Dispatch 배차·운행</i><i>Warehouse 창고</i><i>Settlement 운임·정산</i></div>
+                  <p>네 구간이 끊기지 않고 한 여정으로 이어집니다. 전부 한 번에 도입하지 않아도 됩니다 — 필요한 구간만 떼어 먼저 쓰고 뒤에 이을 수 있습니다.</p>
+                </div>
+              </div>
+              <div>
+                <div class="lv">
+                  <b>LAYER 03</b><strong>Intelligence</strong><span>지능 · 쌓인 데이터가 판단을 돕는 곳</span>
+                </div>
+                <div class="what">
+                  <div class="chips"><i>질의</i><i>배차·재고 추천</i><i>예외 감지</i><i>업무 에이전트</i></div>
+                  <p>업무 계층에 데이터가 쌓여야 비로소 서는 층입니다. 근거와 후보는 AI 가 내고 결정은 담당자가 합니다. 승인한 결정이 다시 쌓여 다음 추천이 좋아집니다.</p>
+                </div>
+              </div>
+              <div class="base">
+                <div class="lv">
+                  <b>LAYER 04</b><strong>Foundation</strong><span>기반 · 위 세 층이 딛고 선 곳</span>
+                </div>
+                <div class="what">
+                  <div class="chips"><i>기준정보</i><i>연계</i><i>업무 온톨로지</i><i>승인·보안</i></div>
+                  <p>화면보다 먼저 보는 곳입니다. 코드 체계가 어긋나거나 권한이 헐거우면 위층에서 아무리 좋은 화면을 만들어도 숫자를 믿을 수 없습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- 다섯 구간 상세 — 내용 근거는 아래 제품 설명(Webtruck·Webhouse·AX TMS·AX OMS) -->
           <div class="journey">
             <div class="journey-head">
@@ -140,6 +187,7 @@
                   <li>취소·반품·클레임까지 같은 흐름에서</li>
                 </ul>
                 <span class="link">쇼핑몰 · ERP · 고객센터 연계</span>
+                <p class="case"><b>현장 · 가구 홈쇼핑 물류</b>채널마다 양식이 다른 주문을 한 오더 체계로 모아 센터에 할당하고, 분할·취소·반품까지 같은 이력으로 따라갑니다.</p>
               </article>
               <article>
                 <b>02 DISPATCH</b>
@@ -151,6 +199,7 @@
                   <li>운송 상태와 증빙을 현장에서 바로</li>
                 </ul>
                 <span class="link">GPS · 지도 연계</span>
+                <p class="case"><b>현장 · 수출입 컨테이너 운송</b>내수 LCL 과 수출입 FCL 오더를 한 배차판에서 받고, 데머리지 잔여일을 경고로 띄워 반납을 놓치지 않게 합니다.</p>
               </article>
               <article>
                 <b>03 WAREHOUSE</b>
@@ -162,6 +211,7 @@
                   <li>재고 이동·조정·실사와 작업자 이력</li>
                 </ul>
                 <span class="link">OMS · TMS · 택배 연계</span>
+                <p class="case"><b>현장 · 가구 홈쇼핑 창고</b>대형·다품목 가구를 부피와 품목 특성에 맞춘 로케이션으로 두고, 재고 위치와 작업자 이력을 실시간으로 봅니다.</p>
               </article>
               <article>
                 <b>04 SETTLEMENT</b>
@@ -173,6 +223,7 @@
                   <li>전화·수기 없이 증빙으로 정산</li>
                 </ul>
                 <span class="link">세금계산서 · 회계 시스템 연계</span>
+                <p class="case"><b>현장 · 화물운송 가맹망</b>가맹점별 매출과 수수료를 증빙으로 정산하고 세금계산서까지 연결해, 전화와 수기 대조를 없앴습니다.</p>
               </article>
               <article class="ai">
                 <b>05 INTELLIGENCE</b>
@@ -184,6 +235,7 @@
                   <li>AI 가 근거를 내고 <b>사람이 승인</b>합니다</li>
                 </ul>
                 <span class="link">결정 이력으로 규칙을 계속 고칩니다</span>
+                <p class="case"><b>현장 · 제조 그룹 경영 질의</b>「지난주 정지 시간이 왜 늘었나」처럼 사람 말로 물으면 운영 데이터에서 근거와 함께 답합니다.</p>
               </article>
             </div>
           </div>
@@ -204,6 +256,7 @@
                   <li>바뀐 이력과 그 코드가 쓰이는 곳을 함께 추적</li>
                   <li>회사·사업장별로 보이는 범위를 나눠 관리</li>
                 </ul>
+                <p class="case"><b>사례 · 제조 그룹 네 곳</b>한 시스템에 네 그룹을 올리면서 공통 코드와 회사별 경계를 갈랐습니다. 본사는 전부 보고 계열사는 자기 것만 봅니다.</p>
               </article>
               <article>
                 <b>02 INTEGRATION API</b>
@@ -214,6 +267,7 @@
                   <li>실패한 연계는 버리지 않고 재처리 대기열로</li>
                   <li>주고받은 원문을 남겨 나중에 대조합니다</li>
                 </ul>
+                <p class="case"><b>사례 · 주문·재고 수집 자동화</b>물류사와 오픈마켓의 주문을 사람 손 없이 받아 적재하고, 실패한 건은 버리지 않고 다시 집어 넣습니다.</p>
               </article>
               <article>
                 <b>03 BUSINESS ONTOLOGY</b>
@@ -224,6 +278,7 @@
                   <li>규칙과 제약을 문서가 아니라 구조로 보관</li>
                   <li>시스템을 바꿔도 지식은 그대로 남습니다</li>
                 </ul>
+                <p class="case"><b>사례 · 소스가 없는 레거시</b>만든 사람도 설계서도 없는 시스템에서 화면과 응답 데이터만으로 업무 규칙을 복원해 구조로 남겼습니다.</p>
               </article>
               <article>
                 <b>04 APPROVAL &amp; SECURITY</b>
@@ -234,6 +289,7 @@
                   <li>단가·정산처럼 민감한 변경은 승인함을 거쳐</li>
                   <li>변경 이력을 감사 기록으로 보관</li>
                 </ul>
+                <p class="case"><b>사례 · 멀티컴퍼니 기반 모듈</b>회사 경계·기능 권한·로그인 표준을 공통 모듈로 한 번 만들어 모든 제품이 상속합니다. 제품마다 따로 만들지 않습니다.</p>
               </article>
               <article>
                 <b>05 AGENTIC AI</b>
@@ -244,6 +300,7 @@
                   <li>배차·재고·정산 후보를 근거와 함께 제시</li>
                   <li>승인한 결정이 쌓여 다음 추천이 좋아집니다</li>
                 </ul>
+                <p class="case"><b>사례 · 상용 RPA 자체 이관</b>구독형 RPA 열두 종을 자체 코드로 옮겨 예약 수행과 실패 추적까지 플랫폼 안에서 돌립니다.</p>
               </article>
             </div>
 
@@ -777,7 +834,7 @@
     <link rel="stylesheet" href="assets/product-accordion.css" /><link
       rel="stylesheet"
       href="assets/media.css"
-    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/platform-detail.css" /><link rel="stylesheet" href="assets/built-systems.css" />
+    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/platform-detail.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-layers.css" />
     <!-- 맨 위로 — 내려가면 오른쪽 아래에 나타난다 (CEO 지시 2026-10-23) -->
     <a id="toTop" href="#top" aria-label="맨 위로">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
