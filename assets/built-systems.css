@@ -1,0 +1,47 @@
+/* 구축 시스템 — 직접 설계·개발한 업무 시스템을 영역별로 보인다. (CEO 지시 2026-10-23)
+   내용 근거는 회사 프로그램 대장(program-inventory.json, 36건)이다. 대장에 없는 것은 적지 않는다.
+   고객사 이름은 쓰지 않는다(§4.2.1) — 업종과 하는 일로만 적는다.
+   사이트 규칙 — 모서리 각짐, benchmark.css 토큰, 글자 15px 하한. */
+
+.built { padding: 130px 0; background: var(--paper) }
+
+/* 다섯 영역을 3 + 2 로 앉힌다(플랫폼 기반 칸과 같은 짜임) */
+.built-grid { display: grid; grid-template-columns: repeat(6, 1fr); margin-top: 60px; border-left: 1px solid var(--line) }
+.built-grid article {
+  grid-column: span 2;
+  padding: 32px 28px 34px;
+  border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  background: #fff;
+}
+.built-grid article:nth-child(4),
+.built-grid article:nth-child(5) { grid-column: span 3 }
+.built-grid article:nth-child(n + 4) { border-top: 0 }
+
+.built-grid > article > b { font: 800 15px Manrope; color: var(--blue); letter-spacing: .1em }
+.built-grid h3 { font-size: 23px; line-height: 1.4; margin: 12px 0 20px; letter-spacing: -.02em }
+
+.built-grid ul { list-style: none; margin: 0; padding: 0 }
+.built-grid li { padding: 15px 0; border-top: 1px solid var(--line) }
+.built-grid li strong { display: block; font-size: 17px; font-weight: 700; color: var(--ink) }
+.built-grid li span { display: block; margin-top: 6px; font-size: 16px; line-height: 1.75; color: var(--muted) }
+
+/* 꼬리말 — 무엇을 가렸고 어디까지가 운영인지 밝힌다 */
+.built-note {
+  margin-top: 26px; padding: 20px 24px; background: #e6edf7;
+  font-size: 16px; line-height: 1.8; color: #415a7d;
+}
+
+@media (max-width: 1100px) {
+  .built-grid { grid-template-columns: repeat(2, 1fr) }
+  .built-grid article,
+  .built-grid article:nth-child(4),
+  .built-grid article:nth-child(5) { grid-column: auto }
+  .built-grid article:nth-child(n + 3) { border-top: 0 }
+}
+@media (max-width: 900px) { .built { padding: 85px 0 } }
+@media (max-width: 560px) {
+  .built-grid { grid-template-columns: 1fr }
+  .built-grid article { border-top: 0 }
+  .built-grid article:first-child { border-top: 1px solid var(--line) }
+}

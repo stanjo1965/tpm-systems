@@ -1,0 +1,79 @@
+/* 다섯 구간 상세 — 플랫폼 지도 아래에 무엇을 하는 구간인지 풀어 적는다. (CEO 지시 2026-10-23)
+   내용은 이 사이트의 제품 설명(Webtruck · Webhouse · AX TMS · AX OMS)에서 가져왔다. 새로 지어낸 것은 없다.
+   사이트 규칙을 따른다 — 모서리를 둥글리지 않고, 색은 benchmark.css 의 토큰만 쓴다. */
+
+.journey { margin-top: 58px; }
+
+.journey-head {
+  display: flex; align-items: baseline; gap: 18px;
+  padding-bottom: 18px; border-bottom: 1px solid var(--line);
+}
+.journey-head h3 { font-size: 28px; letter-spacing: -.03em; }
+.journey-head p { font-size: 18px; color: var(--muted); }
+
+.journey-grid {
+  /* 한 줄 25자쯤 들어가야 읽힌다. 5열이면 13자라 줄이 계속 끊긴다(2026-10-23 실측). */
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border-left: 1px solid var(--line);
+}
+.journey-grid article {
+  padding: 30px 24px 32px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+.journey-grid b { font: 800 15px Manrope; color: var(--blue); letter-spacing: .1em }
+.journey-grid h4 {
+  font: 800 22px Manrope; margin: 11px 0 5px; letter-spacing: -.02em;
+}
+.journey-grid .ko { display: block; font-size: 17px; color: var(--muted); font-weight: 700 }
+
+.journey-grid .flow {
+  margin: 19px 0 17px; padding: 14px 14px; background: var(--paper);
+  font-size: 17px; line-height: 1.8; color: #415a7d;
+}
+.journey-grid ul { list-style: none; margin: 0; padding: 0 }
+.journey-grid li {
+  font-size: 17px; line-height: 1.75; color: var(--muted);
+  padding: 9px 0; border-top: 1px dashed #e6ecf4;
+}
+.journey-grid li:first-child { border-top: 0 }
+.journey-grid li:before { content: "+"; color: var(--blue); font-weight: 800; margin-right: 7px }
+
+.journey-grid .link {
+  display: block; margin-top: 15px;
+  font: 700 15px Manrope; letter-spacing: .05em; color: #98a2b3;
+}
+
+/* 다섯째 칸(Intelligence)은 두 칸을 차지해 둘째 줄을 채우고, 원칙을 짙게 보인다 —
+   AI 가 정하지 않고 사람이 승인한다. */
+.journey-grid .ai { grid-column: span 2; background: #06152a; border-right-color: #06152a }
+.journey-grid .ai h4 { color: #fff }
+.journey-grid .ai b { color: var(--cyan) }
+.journey-grid .ai .ko { color: #8aa3c0 }
+.journey-grid .ai .flow { background: #ffffff10; color: #cfe0f2 }
+.journey-grid .ai li { color: #a9bbd1; border-top-color: #ffffff1a }
+.journey-grid .ai li:before { color: var(--cyan) }
+.journey-grid .ai .link { color: var(--cyan) }
+
+@media (max-width: 1100px) {
+  .journey-grid { grid-template-columns: repeat(2, 1fr) }
+  .journey-grid .ai { grid-column: 1 / -1 }
+}
+@media (max-width: 560px) {
+  .journey { margin-top: 42px }
+  .journey-head { display: block }
+  .journey-head p { margin-top: 8px }
+  .journey-grid { grid-template-columns: 1fr }
+  .journey-grid .ai { grid-column: auto }
+}
+
+/* 폼 컨트롤은 글꼴 크기를 물려받지 않는다 — 브라우저 기본 13.3px 로 떨어진다.
+   바탕을 올려 둔다(더 구체적인 .btn·.fields input 규칙이 그대로 이긴다). (CEO 2026-10-23) */
+button, input, select, textarea { font-size: 16px }
+
+/* 두 번째 운영 사례(수출입 컨테이너 운송 TMS) — 좌우를 뒤집어 번갈아 보이게 한다. (CEO 지시 2026-10-23) */
+.success .story + .story { margin-top: 30px }
+.success .story.flip .story-visual { order: 2 }
+.success .story.flip .story-visual { background: linear-gradient(145deg, #07172b, #075be0) }
+@media (max-width: 900px) { .success .story.flip .story-visual { order: 0 } }
