@@ -1,0 +1,35 @@
+/* AX 두 축 — 지식(온톨로지)과 자동화. (CEO 지시 2026-10-23 「AX화 된 온톨로지 부분과 자동화 부분도 넣어줘」)
+   글이 아니라 그림으로 보인다 — 왼쪽은 관계 그래프, 오른쪽은 로봇이 도는 순서.
+   내용 근거는 우리가 실제로 만든 것뿐이다(업무 온톨로지·메일 오더 자동 접수·세금계산서 전송·예약 수행).
+   사이트 규칙 — 모서리 각짐, benchmark.css 토큰, 글자 15px 하한. */
+
+.ax2 { margin-top: 58px; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line) }
+.ax2 > section { background: #fff; padding: 32px 30px 30px }
+.ax2 .eyebrow { margin-bottom: 14px }
+.ax2 h3 { font-size: 25px; letter-spacing: -.03em; line-height: 1.4 }
+.ax2 > section > p { margin-top: 10px; font-size: 17px; line-height: 1.8; color: var(--muted) }
+
+/* ── 왼쪽: 관계 그래프 ── */
+.onto-pic { margin: 22px 0 18px; background: var(--paper); padding: 10px }
+.onto-pic svg { width: 100%; height: auto; display: block }
+.onto-pic .o-nd { fill: #fff; stroke: #9ab4d9; stroke-width: 1 }
+.onto-pic .o-core { fill: var(--blue); stroke: none }
+.onto-pic .o-ln { stroke: #9ab4d9; stroke-width: 1 }
+.onto-pic .o-t { font: 700 14px "Noto Sans KR"; fill: var(--ink); text-anchor: middle }
+.onto-pic .o-tc { font: 800 16px "Noto Sans KR"; fill: #fff; text-anchor: middle }
+.onto-pic .o-rel { font: 700 12px "Noto Sans KR"; fill: #8198b4; text-anchor: middle }
+
+/* ── 오른쪽: 자동화 차례 ── */
+.auto-steps { margin: 22px 0 18px; border-top: 1px solid var(--line) }
+.auto-steps li { list-style: none; display: grid; grid-template-columns: 54px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line) }
+.auto-steps ol { margin: 0; padding: 0 }
+.auto-steps .bot { align-self: start; padding: 5px 0; text-align: center; background: #e2f0ff; color: #0b5cc7; font: 800 13px Manrope; letter-spacing: .06em }
+.auto-steps .bot.hand { background: #fff2e0; color: #a96100 }
+.auto-steps strong { display: block; font-size: 17px; font-weight: 700 }
+.auto-steps span { display: block; margin-top: 4px; font-size: 16px; line-height: 1.7; color: var(--muted) }
+
+.ax2 .tags { display: flex; flex-wrap: wrap; gap: 7px }
+.ax2 .tags i { font-style: normal; padding: 7px 13px; background: #e6edf7; font: 700 15px Manrope; color: #415a7d }
+
+@media (max-width: 900px) { .ax2 { grid-template-columns: 1fr } }
+@media (max-width: 560px) { .ax2 > section { padding: 24px 20px } }

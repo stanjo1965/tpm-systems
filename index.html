@@ -282,6 +282,74 @@
             </div>
           </div>
 
+          <!-- AX 두 축 — 지식(온톨로지)과 자동화. 그림으로 보인다. (CEO 지시 2026-10-23) -->
+          <div class="ax2">
+            <section>
+              <p class="eyebrow">BUSINESS ONTOLOGY</p>
+              <h3>업무를 표가 아니라<br />관계로 적어 둡니다</h3>
+              <p>「오더」가 무엇과 어떻게 이어지는지를 구조로 남깁니다. 그래야 사람 말로 물어도 답을 찾습니다.</p>
+              <div class="onto-pic">
+                <svg viewBox="0 0 440 310" role="img" aria-label="오더를 가운데 두고 화주·차량·기사·컨테이너·창고·운임이 관계로 이어진 그림">
+                  <line class="o-ln" x1="220" y1="112" x2="220" y2="62"/>
+                  <line class="o-ln" x1="264" y1="130" x2="322" y2="104"/>
+                  <line class="o-ln" x1="264" y1="180" x2="322" y2="206"/>
+                  <line class="o-ln" x1="220" y1="198" x2="220" y2="248"/>
+                  <line class="o-ln" x1="176" y1="180" x2="118" y2="206"/>
+                  <line class="o-ln" x1="176" y1="130" x2="118" y2="104"/>
+
+                  <text class="o-rel" x="238" y="92">맡긴다</text>
+                  <text class="o-rel" x="306" y="110">싣는다</text>
+                  <text class="o-rel" x="306" y="196">운전한다</text>
+                  <text class="o-rel" x="240" y="228">담는다</text>
+                  <text class="o-rel" x="134" y="196">거친다</text>
+                  <text class="o-rel" x="134" y="110">매긴다</text>
+
+                  <circle class="o-core" cx="220" cy="155" r="44"/>
+                  <text class="o-tc" x="220" y="161">오더</text>
+
+                  <rect class="o-nd" x="172" y="18" width="96" height="36"/><text class="o-t" x="220" y="41">화주</text>
+                  <rect class="o-nd" x="326" y="72" width="96" height="36"/><text class="o-t" x="374" y="95">차량</text>
+                  <rect class="o-nd" x="326" y="196" width="96" height="36"/><text class="o-t" x="374" y="219">기사</text>
+                  <rect class="o-nd" x="172" y="252" width="96" height="36"/><text class="o-t" x="220" y="275">컨테이너</text>
+                  <rect class="o-nd" x="18" y="196" width="96" height="36"/><text class="o-t" x="66" y="219">창고</text>
+                  <rect class="o-nd" x="18" y="72" width="96" height="36"/><text class="o-t" x="66" y="95">운임</text>
+                </svg>
+              </div>
+              <div class="tags"><i>업무 용어 사전</i><i>관계와 제약</i><i>사람 말 질의</i><i>시스템이 바뀌어도 남음</i></div>
+            </section>
+
+            <section>
+              <p class="eyebrow">AUTOMATION</p>
+              <h3>사람 손이 닿지 않아도<br />도는 일이 있습니다</h3>
+              <p>반복되는 일은 로봇이 먼저 합니다. 사람은 확인하고 결정하는 자리에만 섭니다.</p>
+              <div class="auto-steps">
+                <ol>
+                  <li>
+                    <span class="bot">자동</span>
+                    <div><strong>메일로 온 오더를 읽어 등록</strong><span>붙임 파일까지 열어 항목을 뽑아 오더로 만듭니다</span></div>
+                  </li>
+                  <li>
+                    <span class="bot">자동</span>
+                    <div><strong>배차 후보 산출</strong><span>공차 거리·반납 여유·기사 이력을 함께 봅니다</span></div>
+                  </li>
+                  <li>
+                    <span class="bot hand">사람</span>
+                    <div><strong>담당자가 배차를 확정</strong><span>정하는 자리는 사람입니다. 고른 이유가 남습니다</span></div>
+                  </li>
+                  <li>
+                    <span class="bot">자동</span>
+                    <div><strong>운행 완료분 정산 집계</strong><span>운임·추가운임·수수료를 증빙과 함께 모읍니다</span></div>
+                  </li>
+                  <li>
+                    <span class="bot">자동</span>
+                    <div><strong>세금계산서 전송과 결과 확인</strong><span>보낸 뒤 실패한 건만 다시 집어 올립니다</span></div>
+                  </li>
+                </ol>
+              </div>
+              <div class="tags"><i>메일 자동 접수</i><i>예약 수행</i><i>실패 재처리</i><i>수집 자동화</i><i>상용 RPA 자체 이관</i></div>
+            </section>
+          </div>
+
           <!-- 바깥 연계 — 한 줄로 -->
           <div class="conn">
             <b>이미 쓰는 시스템과 붙습니다</b>
@@ -798,7 +866,7 @@
     <link rel="stylesheet" href="assets/product-accordion.css" /><link
       rel="stylesheet"
       href="assets/media.css"
-    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-visual.css" />
+    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-visual.css" /><link rel="stylesheet" href="assets/ax-two.css" />
     <!-- 맨 위로 — 내려가면 오른쪽 아래에 나타난다 (CEO 지시 2026-10-23) -->
     <a id="toTop" href="#top" aria-label="맨 위로">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
