@@ -123,205 +123,169 @@
               ><span>분석·AI 에이전트</span>
             </div>
           </div>
-          <!-- 계층 분류 — 구간과 기반이 평평하게 나열돼 무엇이 무엇 위에 서는지 보이지 않았다.
-               채널/업무/지능/기반 네 층으로 가른다. (CEO 지시 2026-10-23) -->
-          <div class="layers">
-            <div class="layers-head">
-              <h3>플랫폼은 네 계층으로 나뉩니다</h3>
-              <p>아래 층이 흔들리면 위층이 전부 흔들립니다. 그래서 순서가 있습니다.</p>
+          <!-- 그림 ① 한 줄 흐름 — 일이 지나는 순서 -->
+          <div class="flowline">
+            <div class="fl-head"><h3>일은 이 순서로 지나갑니다</h3></div>
+            <div class="fl-row">
+              <article>
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></span>
+                <b>01</b><strong>오더</strong><p>흩어진 주문을<br />한 체계로</p>
+              </article>
+              <i class="arw"></i>
+              <article>
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M2 7h11v9H2z"/><path d="M13 10h4l4 3v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+                <b>02</b><strong>배차</strong><p>조건에 맞는<br />차와 기사를</p>
+              </article>
+              <i class="arw"></i>
+              <article>
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M3 10l9-6 9 6v11H3z"/><path d="M9 21v-7h6v7"/></svg></span>
+                <b>03</b><strong>창고</strong><p>입고·재고·출고를<br />위치까지</p>
+              </article>
+              <i class="arw"></i>
+              <article>
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M4 3h16v18l-3-2-3 2-2-2-2 2-3-2-3 2z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+                <b>04</b><strong>정산</strong><p>운임과 수수료를<br />증빙으로</p>
+              </article>
             </div>
-            <div class="layers-stack">
-              <div>
-                <div class="lv">
-                  <b>LAYER 01</b><strong>Channel</strong><span>채널 · 쓰는 사람이 닿는 면</span>
-                </div>
-                <div class="what">
-                  <div class="chips"><i>웹 화면</i><i>모바일 앱</i><i>현장 바코드</i><i>외부 연계 창구</i></div>
-                  <p>같은 데이터를 보는 사람에 맞춰 다르게 보여 줍니다. 앱은 웹 화면을 그대로 쓰는 하이브리드라, 서버가 바뀌면 앱을 다시 깔지 않아도 화면이 함께 바뀝니다.</p>
-                </div>
-              </div>
-              <div>
-                <div class="lv">
-                  <b>LAYER 02</b><strong>Operation</strong><span>업무 · 매일의 일이 지나는 곳</span>
-                </div>
-                <div class="what">
-                  <div class="chips"><i>Order 오더</i><i>Dispatch 배차·운행</i><i>Warehouse 창고</i><i>Settlement 운임·정산</i></div>
-                  <p>네 구간이 끊기지 않고 한 여정으로 이어집니다. 전부 한 번에 도입하지 않아도 됩니다 — 필요한 구간만 떼어 먼저 쓰고 뒤에 이을 수 있습니다.</p>
-                </div>
-              </div>
-              <div>
-                <div class="lv">
-                  <b>LAYER 03</b><strong>Intelligence</strong><span>지능 · 쌓인 데이터가 판단을 돕는 곳</span>
-                </div>
-                <div class="what">
-                  <div class="chips"><i>질의</i><i>배차·재고 추천</i><i>예외 감지</i><i>업무 에이전트</i></div>
-                  <p>업무 계층에 데이터가 쌓여야 비로소 서는 층입니다. 근거와 후보는 AI 가 내고 결정은 담당자가 합니다. 승인한 결정이 다시 쌓여 다음 추천이 좋아집니다.</p>
-                </div>
-              </div>
-              <div class="base">
-                <div class="lv">
-                  <b>LAYER 04</b><strong>Foundation</strong><span>기반 · 위 세 층이 딛고 선 곳</span>
-                </div>
-                <div class="what">
-                  <div class="chips"><i>기준정보</i><i>연계</i><i>업무 온톨로지</i><i>승인·보안</i></div>
-                  <p>화면보다 먼저 보는 곳입니다. 코드 체계가 어긋나거나 권한이 헐거우면 위층에서 아무리 좋은 화면을 만들어도 숫자를 믿을 수 없습니다.</p>
-                </div>
-              </div>
+            <div class="fl-ai">
+              <strong>INTELLIGENCE</strong>
+              <p>네 구간에 쌓인 데이터로 AI 가 근거와 후보를 냅니다. 결정은 담당자가 합니다.</p>
             </div>
           </div>
 
-          <!-- 다섯 구간 상세 — 내용 근거는 아래 제품 설명(Webtruck·Webhouse·AX TMS·AX OMS) -->
-          <div class="journey">
-            <div class="journey-head">
-              <h3>한 여정이 지나는 다섯 구간</h3>
-              <p>구간마다 쓰는 사람과 다루는 데이터가 다릅니다. 플랫폼은 그 사이가 끊기지 않게 잇습니다.</p>
+          <!-- 그림 ② 네 계층 — 아래가 위를 떠받친다 -->
+          <div class="lay">
+            <div class="lay-row">
+              <div class="nm"><b>LAYER 01</b><strong>Channel</strong><span>사람이 닿는 면</span></div>
+              <div class="ch"><i>웹 화면</i><i>차주 앱</i><i>화주 앱</i><i>경영 앱</i><i>현장 바코드</i></div>
             </div>
-            <div class="journey-grid">
-              <article>
-                <b>01 ORDER</b>
-                <h4>Order<span class="ko">오더</span></h4>
-                <p class="flow">채널별 주문 수집 → 표준화·검증 → 재고/센터 할당 → 출고·운송 지시</p>
-                <ul>
-                  <li>원주문과 분할 주문을 한 이력으로</li>
-                  <li>납기·우선순위와 주문 변경 관리</li>
-                  <li>취소·반품·클레임까지 같은 흐름에서</li>
-                </ul>
-                <span class="link">쇼핑몰 · ERP · 고객센터 연계</span>
-                <p class="case"><b>현장 · 가구 홈쇼핑 물류</b>채널마다 양식이 다른 주문을 한 오더 체계로 모아 센터에 할당하고, 분할·취소·반품까지 같은 이력으로 따라갑니다.</p>
-              </article>
-              <article>
-                <b>02 DISPATCH</b>
-                <h4>Dispatch<span class="ko">배차·운행</span></h4>
-                <p class="flow">운송 의뢰 접수 → 차량 조건 확인 → 배차·수락 → 상차·운행·하차 → 인수 확인</p>
-                <ul>
-                  <li>화주·거래처, 차량·기사 정보</li>
-                  <li>노선·운임표와 배차 이력</li>
-                  <li>운송 상태와 증빙을 현장에서 바로</li>
-                </ul>
-                <span class="link">GPS · 지도 연계</span>
-                <p class="case"><b>현장 · 수출입 컨테이너 운송</b>내수 LCL 과 수출입 FCL 오더를 한 배차판에서 받고, 데머리지 잔여일을 경고로 띄워 반납을 놓치지 않게 합니다.</p>
-              </article>
-              <article>
-                <b>03 WAREHOUSE</b>
-                <h4>Warehouse<span class="ko">창고</span></h4>
-                <p class="flow">입고 예정 → 검수·적치 → 주문 할당 → 피킹·검수·포장 → 출고 확정</p>
-                <ul>
-                  <li>품목·바코드·로트 단위 관리</li>
-                  <li>가용·보류 재고와 로케이션</li>
-                  <li>재고 이동·조정·실사와 작업자 이력</li>
-                </ul>
-                <span class="link">OMS · TMS · 택배 연계</span>
-                <p class="case"><b>현장 · 가구 홈쇼핑 창고</b>대형·다품목 가구를 부피와 품목 특성에 맞춘 로케이션으로 두고, 재고 위치와 작업자 이력을 실시간으로 봅니다.</p>
-              </article>
-              <article>
-                <b>04 SETTLEMENT</b>
-                <h4>Settlement<span class="ko">운임·정산</span></h4>
-                <p class="flow">인수 확인 → 운임 확정 → 정산 → 손익 확인</p>
-                <ul>
-                  <li>미수·미지급과 가맹 수수료</li>
-                  <li>운임 조건별 원가와 수익성</li>
-                  <li>전화·수기 없이 증빙으로 정산</li>
-                </ul>
-                <span class="link">세금계산서 · 회계 시스템 연계</span>
-                <p class="case"><b>현장 · 화물운송 가맹망</b>가맹점별 매출과 수수료를 증빙으로 정산하고 세금계산서까지 연결해, 전화와 수기 대조를 없앴습니다.</p>
-              </article>
-              <article class="ai">
-                <b>05 INTELLIGENCE</b>
-                <h4>Intelligence<span class="ko">분석·AI 에이전트</span></h4>
-                <p class="flow">데이터 축적 → 후보·근거 제시 → 담당자 승인 → 결정 이력 축적</p>
-                <ul>
-                  <li>차종·거리·시간·공차·기사 이력을 함께 분석</li>
-                  <li>배차 후보와 예상 지연, 수익성 판단</li>
-                  <li>AI 가 근거를 내고 <b>사람이 승인</b>합니다</li>
-                </ul>
-                <span class="link">결정 이력으로 규칙을 계속 고칩니다</span>
-                <p class="case"><b>현장 · 제조 그룹 경영 질의</b>「지난주 정지 시간이 왜 늘었나」처럼 사람 말로 물으면 운영 데이터에서 근거와 함께 답합니다.</p>
-              </article>
+            <div class="lay-row">
+              <div class="nm"><b>LAYER 02</b><strong>Operation</strong><span>매일의 업무</span></div>
+              <div class="ch"><i>Order</i><i>Dispatch</i><i>Warehouse</i><i>Settlement</i></div>
+            </div>
+            <div class="lay-row">
+              <div class="nm"><b>LAYER 03</b><strong>Intelligence</strong><span>판단을 돕는 층</span></div>
+              <div class="ch"><i>질의</i><i>배차 추천</i><i>재고 추천</i><i>예외 감지</i><i>업무 에이전트</i></div>
+            </div>
+            <div class="lay-row base">
+              <div class="nm"><b>LAYER 04</b><strong>Foundation</strong><span>딛고 선 바닥</span></div>
+              <div class="ch"><i>기준정보</i><i>연계</i><i>업무 온톨로지</i><i>승인·보안</i><i>감사 기록</i></div>
             </div>
           </div>
 
-          <!-- 기반 다섯 가지 — 칩 한 줄로는 무엇인지 알 수 없어 풀어 적는다. (CEO 지시 2026-10-23) -->
-          <div class="pf">
-            <div class="pf-head">
-              <h3>플랫폼을 떠받치는 다섯 가지</h3>
-              <p>구간을 잇는 것은 화면이 아니라 그 아래의 기반입니다.</p>
+          <!-- 그림 ③ 화면 모형 — 가만히 두면 돌아간다 (shots.js) -->
+          <div class="shots">
+            <div class="shots-head">
+              <h3>화면은 이렇게 생겼습니다</h3>
+              <p>그려 넣은 보기 화면입니다. 실제 고객 데이터가 아닙니다.</p>
             </div>
-            <div class="pf-grid">
-              <article>
-                <b>01 MASTER DATA</b>
-                <h4>Master Data<span class="ko">기준정보</span></h4>
-                <p>거래처·품목·차량·기사·창고·운임표를 한 곳에서 정의하고, 모든 모듈이 같은 코드를 가져다 씁니다. 기준이 어긋나면 그 뒤의 집계가 전부 어긋납니다.</p>
-                <ul>
-                  <li>한 번 정의하면 모든 화면이 같은 값을 봅니다</li>
-                  <li>바뀐 이력과 그 코드가 쓰이는 곳을 함께 추적</li>
-                  <li>회사·사업장별로 보이는 범위를 나눠 관리</li>
-                </ul>
-                <p class="case"><b>사례 · 제조 그룹 네 곳</b>한 시스템에 네 그룹을 올리면서 공통 코드와 회사별 경계를 갈랐습니다. 본사는 전부 보고 계열사는 자기 것만 봅니다.</p>
-              </article>
-              <article>
-                <b>02 INTEGRATION API</b>
-                <h4>Integration<span class="ko">연계</span></h4>
-                <p>쇼핑몰·ERP·회계·GPS·택배·세금계산서와 데이터를 주고받습니다. 상대 시스템을 바꾸지 않고 옆에 붙이는 방식이라 운영을 멈추지 않습니다.</p>
-                <ul>
-                  <li>표준 API 와 엑셀·CSV 양쪽을 모두 받습니다</li>
-                  <li>실패한 연계는 버리지 않고 재처리 대기열로</li>
-                  <li>주고받은 원문을 남겨 나중에 대조합니다</li>
-                </ul>
-                <p class="case"><b>사례 · 주문·재고 수집 자동화</b>물류사와 오픈마켓의 주문을 사람 손 없이 받아 적재하고, 실패한 건은 버리지 않고 다시 집어 넣습니다.</p>
-              </article>
-              <article>
-                <b>03 BUSINESS ONTOLOGY</b>
-                <h4>Ontology<span class="ko">업무 온톨로지</span></h4>
-                <p>표와 컬럼이 아니라 「오더」와 「배차」와 「재고」가 서로 무엇인지를 관계로 적어 둡니다. 업무 지식이 담당자의 머리가 아니라 구조에 남습니다.</p>
-                <ul>
-                  <li>업무 용어와 데이터 구조를 잇는 사전</li>
-                  <li>규칙과 제약을 문서가 아니라 구조로 보관</li>
-                  <li>시스템을 바꿔도 지식은 그대로 남습니다</li>
-                </ul>
-                <p class="case"><b>사례 · 소스가 없는 레거시</b>만든 사람도 설계서도 없는 시스템에서 화면과 응답 데이터만으로 업무 규칙을 복원해 구조로 남겼습니다.</p>
-              </article>
-              <article>
-                <b>04 APPROVAL &amp; SECURITY</b>
-                <h4>Approval &amp; Security<span class="ko">승인·보안</span></h4>
-                <p>역할마다 보이는 범위가 다르고, 중요한 변경은 승인을 거칩니다. 누가 언제 무엇을 바꿨는지가 남아야 운영 사고를 되짚을 수 있습니다.</p>
-                <ul>
-                  <li>역할·회사 단위 접근 제어와 로그인 표준</li>
-                  <li>단가·정산처럼 민감한 변경은 승인함을 거쳐</li>
-                  <li>변경 이력을 감사 기록으로 보관</li>
-                </ul>
-                <p class="case"><b>사례 · 멀티컴퍼니 기반 모듈</b>회사 경계·기능 권한·로그인 표준을 공통 모듈로 한 번 만들어 모든 제품이 상속합니다. 제품마다 따로 만들지 않습니다.</p>
-              </article>
-              <article>
-                <b>05 AGENTIC AI</b>
-                <h4>Agentic AI<span class="ko">업무 에이전트</span></h4>
-                <p>반복 업무는 에이전트가 대신 수행하고, 판단이 필요한 일은 근거와 후보를 함께 올립니다. 정하는 사람은 끝까지 담당자입니다.</p>
-                <ul>
-                  <li>사람 말로 묻고 표·그래프로 답을 받습니다</li>
-                  <li>배차·재고·정산 후보를 근거와 함께 제시</li>
-                  <li>승인한 결정이 쌓여 다음 추천이 좋아집니다</li>
-                </ul>
-                <p class="case"><b>사례 · 상용 RPA 자체 이관</b>구독형 RPA 열두 종을 자체 코드로 옮겨 예약 수행과 실패 추적까지 플랫폼 안에서 돌립니다.</p>
-              </article>
+            <div class="shot-tabs" role="tablist">
+              <button type="button" role="tab" aria-selected="true">AI 배차판</button>
+              <button type="button" role="tab" aria-selected="false">창고 재고</button>
+              <button type="button" role="tab" aria-selected="false">경영 대시보드</button>
             </div>
+            <div class="shot-stage">
 
-            <!-- 플랫폼은 혼자 서 있지 않는다 — 무엇과 붙는지를 밝힌다 -->
-            <div class="pf-link">
-              <p>CONNECTED SYSTEMS</p>
-              <h3>이미 쓰고 계신 시스템 옆에 붙습니다</h3>
-              <p>전부 바꾸지 않아도 됩니다. 필요한 구간부터 연결하고, 결과가 같다는 것을 확인한 뒤 범위를 넓힙니다.</p>
-              <div class="pf-link-grid">
-                <div><strong>주문·채널</strong><span>쇼핑몰 · 오픈마켓<br />홈쇼핑 · 고객센터</span></div>
-                <div><strong>기업 시스템</strong><span>ERP · 회계 · 그룹웨어<br />기존 TMS · WMS</span></div>
-                <div><strong>현장·이동</strong><span>GPS · 지도 · 택배사<br />바코드 · 모바일 앱</span></div>
-                <div><strong>증빙·정산</strong><span>세금계산서 · 운임표<br />수수료 · 정산 명세</span></div>
+              <div class="shot on">
+                <div class="win">
+                  <div class="win-bar"><u></u><u></u><u></u><em>AI 배차관리</em><s>오늘 · 배차 대기 4</s></div>
+                  <div class="win-body m-disp">
+                    <div class="m-list">
+                      <div class="r"><b>오더</b><span>구간</span><span>상태</span></div>
+                      <div class="r"><b>FCL-2271</b><span>인천항 → 평택</span><span class="tag t-wait">배차 대기</span></div>
+                      <div class="r"><b>FCL-2270</b><span>부산항 → 양산</span><span class="tag t-run">운행 중</span></div>
+                      <div class="r"><b>LCL-1182</b><span>군포 → 대전</span><span class="tag t-run">운행 중</span></div>
+                      <div class="r"><b>FCL-2268</b><span>인천항 → 안성</span><span class="tag t-done">인수 확인</span></div>
+                      <div class="r"><b>LCL-1179</b><span>김포 → 청주</span><span class="tag t-done">인수 확인</span></div>
+                    </div>
+                    <div class="m-cand">
+                      <b>FCL-2271 배차 후보</b>
+                      <div class="c">
+                        <div class="t"><span>차량 A · 40ft</span><i>92</i></div>
+                        <div class="s">공차 12km · 반납 여유 3일</div>
+                        <div class="bar"><u style="width:92%"></u></div>
+                      </div>
+                      <div class="c">
+                        <div class="t"><span>차량 B · 40ft</span><i>78</i></div>
+                        <div class="s">공차 34km · 반납 여유 2일</div>
+                        <div class="bar"><u style="width:78%"></u></div>
+                      </div>
+                      <div class="c">
+                        <div class="t"><span>차량 C · 40ft</span><i>61</i></div>
+                        <div class="s">공차 51km · 반납 여유 1일</div>
+                        <div class="bar"><u style="width:61%"></u></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="shot-cap"><b>AI 가 후보를 내고 사람이 고릅니다.</b> 공차 거리와 반납 여유일을 함께 보아 순서를 매깁니다.</p>
               </div>
+
+              <div class="shot">
+                <div class="win">
+                  <div class="win-bar"><u></u><u></u><u></u><em>창고 재고 · 로케이션</em><s>A동 · 1층</s></div>
+                  <div class="win-body m-wh">
+                    <div>
+                      <div class="m-cols"><i>01</i><i>02</i><i>03</i><i>04</i><i>05</i><i>06</i><i>07</i><i>08</i></div>
+                      <div class="m-grid">
+                        <u class="l2"></u><u class="l4"></u><u class="l1"></u><u class="l3"></u><u class="l4"></u><u></u><u class="l2"></u><u class="l1"></u>
+                        <u class="l3"></u><u class="l3"></u><u class="l4"></u><u class="l1"></u><u></u><u class="l2"></u><u class="l4"></u><u class="l3"></u>
+                        <u class="l1"></u><u class="l2"></u><u class="l2"></u><u class="l4"></u><u class="l3"></u><u class="l1"></u><u></u><u class="l2"></u>
+                        <u class="l4"></u><u class="l1"></u><u class="l3"></u><u class="l2"></u><u class="l4"></u><u class="l3"></u><u class="l1"></u><u></u>
+                      </div>
+                      <div class="m-legend">적재율<u style="background:#e9eff7"></u>빈칸<u style="background:#cfe0f5"></u><u style="background:#95bdeb"></u><u style="background:#4f91e0"></u><u style="background:#075be0"></u>가득</div>
+                    </div>
+                    <div class="m-side">
+                      <div class="k"><b>보관 품목</b><strong>1,284</strong></div>
+                      <div class="k"><b>가용 재고</b><strong>1,106</strong></div>
+                      <div class="k"><b>보류 재고</b><strong>178</strong></div>
+                      <div class="k"><b>오늘 출고 예정</b><strong>212</strong></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="shot-cap"><b>어디에 얼마나 있는지가 한 눈에.</b> 칸 색이 짙을수록 많이 찬 자리입니다.</p>
+              </div>
+
+              <div class="shot">
+                <div class="win">
+                  <div class="win-bar"><u></u><u></u><u></u><em>경영 대시보드</em><s>이번 달</s></div>
+                  <div class="win-body">
+                    <div class="m-kpi">
+                      <div><b>운송 건수</b><strong>3,418</strong><em>▲ 6%</em></div>
+                      <div><b>정시 인수</b><strong>97.2%</strong><em>▲ 1.4%</em></div>
+                      <div><b>공차율</b><strong>11.8%</strong><em>▼ 2.1%</em></div>
+                      <div><b>미정산</b><strong>42건</strong><em>▼ 18건</em></div>
+                    </div>
+                    <div class="m-charts">
+                      <div>
+                        <b>요일별 운송 건수</b>
+                        <div class="m-bars">
+                          <u style="height:58%"></u><u style="height:74%"></u><u style="height:66%"></u>
+                          <u style="height:88%"></u><u style="height:100%"></u><u class="q" style="height:41%"></u><u class="q" style="height:23%"></u>
+                        </div>
+                        <div class="m-days"><i>월</i><i>화</i><i>수</i><i>목</i><i>금</i><i>토</i><i>일</i></div>
+                      </div>
+                      <div>
+                        <b>주간 공차율 추이</b>
+                        <svg viewBox="0 0 220 112" aria-hidden="true">
+                          <polyline points="6,34 42,46 78,38 114,62 150,74 186,88 214,82" fill="none" stroke="#075be0" stroke-width="2.4"/>
+                          <polyline points="6,34 42,46 78,38 114,62 150,74 186,88 214,82 214,112 6,112" fill="#075be014" stroke="none"/>
+                          <circle cx="186" cy="88" r="4" fill="#075be0"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="shot-cap"><b>물어보지 않아도 먼저 보입니다.</b> 사람 말로 물으면 근거가 되는 표까지 함께 답합니다.</p>
+              </div>
+
             </div>
           </div>
 
-          <div class="platform-foundation">
-            <span>Master Data</span><span>Integration API</span
-            ><span>Business Ontology</span><span>Approval & Security</span
-            ><span>Agentic AI</span>
+          <!-- 바깥 연계 — 한 줄로 -->
+          <div class="conn">
+            <b>이미 쓰는 시스템과 붙습니다</b>
+            <div class="c"><i>쇼핑몰</i><i>오픈마켓</i><i>ERP</i><i>회계</i><i>기존 TMS·WMS</i><i>GPS·지도</i><i>택배사</i><i>세금계산서</i></div>
           </div>
         </div>
       </section>
@@ -633,59 +597,59 @@
               <p class="eyebrow">BUILT SYSTEMS</p>
               <h2>물류에서 익힌 방식으로<br />다른 현장도 만들었습니다</h2>
             </div>
-            <p>운송과 창고에서 쓰던 설계를 제조·유통·커머스 현장에 그대로 적용했습니다. 아래는 직접 설계하고 개발하거나, 멈추지 않고 현대화한 업무 시스템입니다.</p>
+            <p>운송과 창고에서 쓰던 설계를 제조·유통·커머스 현장에도 그대로 적용했습니다.</p>
           </div>
           <div class="built-grid">
             <article>
               <b>01 LOGISTICS</b>
               <h3>운송과 창고</h3>
               <ul>
-                <li><strong>컨테이너 운송 TMS</strong><span>내수 LCL·수출입 FCL 오더와 AI 배차판, 차주·화주·경영 앱 셋</span></li>
-                <li><strong>가구 홈쇼핑 WMS</strong><span>대형·다품목 가구의 입출고와 로케이션을 현장 기준으로</span></li>
-                <li><strong>화물운송 가맹 플랫폼</strong><span>접수·배차·운행 추적·운임 정산과 가맹 수수료 관리</span></li>
-                <li><strong>판매자 활동 분석</strong><span>채널별 주문·상품·정산 데이터를 아홉 개 화면으로</span></li>
+                <li><strong>컨테이너 운송 TMS</strong><span>LCL·FCL 오더 · AI 배차판 · 앱 셋</span></li>
+                <li><strong>가구 홈쇼핑 WMS</strong><span>대형·다품목 입출고 · 로케이션</span></li>
+                <li><strong>화물운송 가맹 플랫폼</strong><span>접수 · 배차 · 관제 · 가맹 정산</span></li>
+                <li><strong>판매자 활동 분석</strong><span>채널 주문·상품·정산 아홉 화면</span></li>
               </ul>
             </article>
             <article>
               <b>02 MANUFACTURING</b>
               <h3>제조 운영</h3>
               <ul>
-                <li><strong>그룹 제조운영시스템(MOM)</strong><span>제조 그룹 네 곳에 본사 총괄과 계열사 경계를 나눈 멀티컴퍼니 구조로</span></li>
-                <li><strong>철심 제조 MES 현대화</strong><span>소스가 없는 레거시의 화면과 데이터 구조를 복원해 매뉴얼과 설계로</span></li>
-                <li><strong>공장 지능화(FI)</strong><span>설비·생산 데이터를 지표와 경고로 바꿔 관리자 화면에</span></li>
+                <li><strong>그룹 제조운영시스템(MOM)</strong><span>제조 그룹 네 곳 · 본사 총괄 구조</span></li>
+                <li><strong>철심 제조 MES 현대화</strong><span>소스 없는 레거시 구조 복원</span></li>
+                <li><strong>공장 지능화(FI)</strong><span>설비·생산 데이터를 지표와 경고로</span></li>
               </ul>
             </article>
             <article>
               <b>03 ENTERPRISE</b>
               <h3>기업 운영</h3>
               <ul>
-                <li><strong>제약 ERP</strong><span>제조·품질·구매·영업을 한 시스템으로 묶어 단독 구축</span></li>
-                <li><strong>선언형 AX 플랫폼</strong><span>화면·권한·이벤트를 선언으로 생성하고 승인함과 감사 이력을 기본으로</span></li>
-                <li><strong>멀티컴퍼니 기반 모듈</strong><span>회사 경계·기능 권한·로그인 표준을 공통으로 만들어 모든 제품이 상속</span></li>
+                <li><strong>제약 ERP</strong><span>제조·품질·구매·영업 단독 구축</span></li>
+                <li><strong>선언형 AX 플랫폼</strong><span>선언으로 화면 생성 · 승인함 · 감사</span></li>
+                <li><strong>멀티컴퍼니 기반 모듈</strong><span>회사 경계 · 권한 · 로그인 표준</span></li>
               </ul>
             </article>
             <article>
               <b>04 COMMERCE</b>
               <h3>커머스와 채널</h3>
               <ul>
-                <li><strong>자사몰·다채널 운영센터</strong><span>쇼핑몰과 오픈마켓의 주문·상품·재고를 한 화면에서 운영</span></li>
-                <li><strong>상세페이지 제작 도구</strong><span>사진·사실·리뷰로 상세페이지를 만들고 과장 표현을 검사해 걸러냅니다</span></li>
-                <li><strong>사이트·쇼핑몰 빌더</strong><span>필요한 것을 글로 적으면 사이트 사양과 편집 가능한 블록으로</span></li>
-                <li><strong>콘텐츠 자동화</strong><span>블로그·숏폼 원고를 초안까지 만들고 게시는 사람이 승인</span></li>
+                <li><strong>자사몰·다채널 운영센터</strong><span>쇼핑몰·오픈마켓을 한 화면에서</span></li>
+                <li><strong>상세페이지 제작 도구</strong><span>사진·사실·리뷰 → 상세페이지</span></li>
+                <li><strong>사이트·쇼핑몰 빌더</strong><span>글로 적으면 사이트 블록으로</span></li>
+                <li><strong>콘텐츠 자동화</strong><span>블로그·숏폼 초안 · 게시는 사람이</span></li>
               </ul>
             </article>
             <article>
               <b>05 AUTOMATION &amp; AI</b>
               <h3>자동화와 AI</h3>
               <ul>
-                <li><strong>상용 RPA 자체 이관</strong><span>구독형 RPA 열두 종을 자체 코드로 옮겨 예약 수행과 실패 추적까지</span></li>
-                <li><strong>주문·재고 수집 자동화</strong><span>물류사와 마켓의 주문을 사람 손 없이 받아 적재</span></li>
-                <li><strong>검역 신청 업무 봇</strong><span>반복되는 서류 작성과 진행 조회를 자동으로</span></li>
-                <li><strong>경영 질의 엔진</strong><span>사람 말로 물으면 운영 데이터에서 근거와 함께 답합니다</span></li>
+                <li><strong>상용 RPA 자체 이관</strong><span>구독형 RPA 열두 종 → 자체 코드</span></li>
+                <li><strong>주문·재고 수집 자동화</strong><span>물류사·마켓 주문 자동 적재</span></li>
+                <li><strong>검역 신청 업무 봇</strong><span>반복 서류 작성 · 진행 조회</span></li>
+                <li><strong>경영 질의 엔진</strong><span>사람 말로 묻고 근거와 함께 답</span></li>
               </ul>
             </article>
           </div>
-          <p class="built-note">현장에서 운영 중인 시스템과 내부 검증 단계의 제품이 함께 있습니다. 고객사 이름은 적지 않고 업종과 하는 일로만 적습니다.</p>
+          <p class="built-note">운영 중인 것과 내부 검증 단계가 함께 있습니다. 고객사 이름은 적지 않습니다.</p>
         </div>
       </section>
 
@@ -834,7 +798,7 @@
     <link rel="stylesheet" href="assets/product-accordion.css" /><link
       rel="stylesheet"
       href="assets/media.css"
-    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/platform-detail.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-layers.css" />
+    /><link rel="stylesheet" href="assets/franchise.css" /><link rel="stylesheet" href="assets/brand-logo.css" /><link rel="stylesheet" href="assets/modernization.css" /><link rel="stylesheet" href="assets/to-top.css" /><link rel="stylesheet" href="assets/platform-map.css" /><link rel="stylesheet" href="assets/platform-journey.css" /><link rel="stylesheet" href="assets/built-systems.css" /><link rel="stylesheet" href="assets/platform-visual.css" />
     <!-- 맨 위로 — 내려가면 오른쪽 아래에 나타난다 (CEO 지시 2026-10-23) -->
     <a id="toTop" href="#top" aria-label="맨 위로">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
@@ -847,5 +811,6 @@
     <script src="assets/product-accordion.js"></script>
     <script src="assets/platform-map.js"></script>
     <script src="assets/to-top.js"></script>
+    <script src="assets/shots.js"></script>
   </body>
 </html>
